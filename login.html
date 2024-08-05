@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro - iTech</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>iTech</h1>
+            <p>O Futuro na Porta da sua Casa</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login/Cadastro</a></li>
+                <li><a href="serviço.html">Serviços</a></li>
+                <li><a href="#features">Funcionalidades</a></li>
+                <li><a href="#team">Equipe</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section id="login" class="section">
+            <div class="container">
+                <h2>Login e Cadastro</h2>
+                <div id="auth-forms">
+                    <div id="login-form-container">
+                        <h3>Login</h3>
+                        <form id="login-form">
+                            <label for="username">Usuário:</label>
+                            <input type="text" id="username" name="username" required>
+                            <label for="password">Senha:</label>
+                            <input type="password" id="password" name="password" required>
+                            <button type="submit">Entrar</button>
+                            <p id="login-error-message"></p>
+                        </form>
+                        <p>Não tem uma conta? <a href="#" id="show-register">Cadastre-se</a></p>
+                    </div>
+                    <div id="register-form-container" style="display: none;">
+                        <h3>Cadastro</h3>
+                        <form id="register-form">
+                            <label for="new-username">Usuário:</label>
+                            <input type="text" id="new-username" name="username" required>
+                            <label for="new-password">Senha:</label>
+                            <input type="password" id="new-password" name="password" required>
+                            <label for="confirm-password">Confirmar Senha:</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                            <button type="submit">Cadastrar</button>
+                            <p id="register-error-message"></p>
+                        </form>
+                        <p>Já tem uma conta? <a href="#" id="show-login">Faça login</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 iTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
