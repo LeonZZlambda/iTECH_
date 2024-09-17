@@ -1,0 +1,13 @@
+.cta-area .card {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(9, 10, 26, 0.9)), to(rgba(9, 10, 26, 0.5))), url(images/hero_bg.jpg);
+    background-image: linear-gradient(0deg, rgba(9, 10, 26, 0.9), rgba(9, 10, 26, 0.5)), url(images/hero_bg.jpg);
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  
+  .cta-area .card p {
+    color: #fff;
+  }
+

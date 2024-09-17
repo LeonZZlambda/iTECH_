@@ -35,7 +35,11 @@ header p {
 }
 
 nav {
-    background: #333;
+    background-image: linear-gradient(to right, #2200bb, #4f00ff);
+    margin: 1em;
+    border-radius:10px;
+    font-family: 'Franklin Gothic Medium';
+    box-shadow: 0px 4px 3px 0px #3a056c;
 }
 
 nav ul {
@@ -60,15 +64,14 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 20px 0;
+    padding: 20px 40px;
+    border-radius: 15px;
 }
 
 .section {
-    padding: 20px 0;
+    padding: 20px 20px;
     background: white;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    
+    margin: 1em;    
 }
 
 .section h2 {
@@ -81,12 +84,74 @@ main {
     margin-bottom: 20px;
 }
 
+  /* parte modificada pelo Leo - Cmc*/
+
 footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+    background-image: linear-gradient(to right, #30007c, #7e0355);
+    background-color: #30007c;
+    margin-top: 100px;
+    padding: 10px;
+    box-shadow: 4px 0px 0px 2px #3a056c;
+  }
+
+.logo {
+    width: 75px;
+    height:75px;
+    border-radius: 100%;
+  }
+.logo-rotate img{
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-delay: 1s;
 }
+@keyframes rotate{
+    0%{ transform: rotate(0deg);}
+    25%{ transform: rotate(90deg);}
+    50%{ transform: rotate(180deg);}
+    100%{ transform: rotate(360deg);}
+
+ }
+
+
+ footer .logo {
+    margin-left:10%;
+ } 
+
+  footer .content {
+    color: white;
+    display: flex;
+  }
+  footer .content ul {
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+  }
+  footer .container h3 {
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  footer .content .social {
+    margin-left: 16px;
+  }
+  footer .content .social img {
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+    position: relative;
+    top: 60px;
+  }
+  footer .content ul > p {
+    margin-bottom: 40px;
+  }
+  footer .content li {
+    margin: 10px 0;
+  }
+  footer .content a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* parte modificada pelo Leo - Fim*/
 
 form {
     display: flex;
@@ -133,4 +198,13 @@ form button:hover {
     form button {
         width: 100%;
     }
+}
+
+
+.intro {
+    display: inline;
+    text-align: center;
+    width: 100px;
+    height: 140px;
+    margin-left: 45%;
 }

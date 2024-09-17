@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iTech - O Futuro na Porta da sua Casa</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <link rel="stylesheet" href="marry-go.css" type="text/css">
+    <link rel="stylesheet" href="thumb.css" type="text/css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>iTech</h1>
-            <p>O Futuro na Porta da sua Casa</p>
+        <div class="header">
+            <div class="logo-rotate">
+                <img src="images/logos/logo.png" alt="Logo" id="logo" class="logo">
+            </div>
+            <div class="container">
+                <h1>iTech</h1>
+                <p>O Futuro a Porta da sua Casa</p>
+            </div>
         </div>
     </header>
     <nav>
@@ -20,7 +33,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="login.html">Login/Cadastro</a></li>
                 <li><a href="serviço.html">Serviços</a></li>
-                <li><a href="#features">Funcionalidades</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
                 <li><a href="#team">Equipe</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
@@ -30,37 +43,107 @@
         <section id="home" class="section">
             <div class="container">
                 <h2>Bem-vindo ao iTech</h2>
-                <p>Facilitamos a comunicação com técnicos e oferecemos suporte ágil e acessível para suas necessidades tecnológicas.</p>
+                <img src="images/computer.png" alt="a computer" class="intro"/>
+                <h4>Facilitamos a comunicação com técnicos e oferecemos suporte ágil e acessível para suas necessidades tecnológicas.</h4>
             </div>
         </section>
         <section id="about" class="section">
             <div class="container">
                 <h2>Sobre</h2>
-                <p>A manutenção de uma máquina não é um processo tão prático e nem barato tanto para o cliente quanto para o técnico. Por isso, decidimos criar nosso aplicativo que oferece conveniência, rastreabilidade e eficiência, tornando o processo de manutenção mais ágil e satisfatório.</p>
+                <h4>A manutenção de uma máquina não é um processo tão prático e nem barato tanto para o cliente quanto para o técnico. Por isso, decidimos criar nosso aplicativo que oferece conveniência, rastreabilidade e eficiência, tornando o processo de manutenção mais ágil e satisfatório.</h4>
+                
+                <section class="cta-area p-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 card">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-md-5 text-center">
+                                        <img src="images/cta_thumb.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                                        <h2 class="m-0" style="padding-bottom: 12px; color:#f00;">App em Desenvolvimento</h2>
+                                        <p>Mais acessibilidade e facilidade para conexão com seu técnico de preferência; com o App você não verá o mundo da tecnologia do mesmo jeito que antes.</p>
+                                    </div>
+                                </div>
+                                <a class="cta-link" href="apply.html"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
-        <section id="features" class="section">
-            <div class="container">
-                <h2>Funcionalidades</h2>
-                <ul>
-                    <li>Chamados Rápidos: Relate problemas de maneira ágil.</li>
-                    <li>Acompanhamento Transparente: Rastreie o status dos chamados em tempo real.</li>
-                    <li>Eficiência na Alocação de Recursos: Otimiza a designação de técnicos.</li>
-                </ul>
-            </div>
+       
         </section>
         <section id="team" class="section">
             <div class="container">
-                <h2>Equipe</h2>
-                <ul>
-                    <li>Leonardo da Silva Lopes - Gerente</li>
-                    <li>Maicon Ryan Fernandes de Oliveira</li>
-                    <li>Thienrry Lima Santana Cardoso</li>
-                    <li>Guilherme da Silva Oliveira</li>
-                    <li>Renan da Silva Martins</li>
-                    <li>Eddy Quispe Calsina</li>
-                </ul>
-            </div>
+
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2>Equipe</h2>
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Carousel indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                                </ol>   
+                                <!-- Wrapper for carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="img-box"><img src="images/about_us/leonzz.jpg" alt="leonardo"></div>
+                                        <p class="testimonial">"Mens et Manvs, per lvx"</p>
+                                        <p class="overview"><b>Leonardo S. Lopes</b>, Gerente e Dev full-stack</p>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="img-box"><img src="images/about_us/renan.jpg" alt="Renan"></div>
+                                        <p class="testimonial">"Olá! Eu estou usando o whatsapp"</p>
+                                        <p class="overview"><b>Renan S. Martins</b>, Designer Geral</p>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="img-box"><img src="images/about_us/guilherme.jpg" alt="Guilherme"></div>
+                                        <p class="testimonial">"Nn tem como deixar sem isso nn Léo?"</p>
+                                        <p class="overview"><b>Guilherme S. Oliveira</b>, Web Developer</p>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="img-box"><img src="images/about_us/eddy.jpg" alt="Eddy"></div>
+                                        <p class="testimonial">"Kurbinhos"</p>
+                                        <p class="overview"><b>Eddy Q. Calcina</b>, Secretário</p>
+
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="img-box"><img src="images/about_us/maicon.jpg" alt="maicon"></div>
+                                        <p class="testimonial">"É a vida"</p>
+                                        <p class="overview"><b>Maicon R. Fernandes</b>, Protótipo Figma</p>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="img-box"><img src="images/about_us/cherry.jpg" alt="cherry"></div>
+                                        <p class="testimonial">"Acho q tô ficando com Alzheimer"</p>
+                                        <p class="overview"><b>Thienrry L. Santanta</b>, Protótipo Figma</p>
+                                    </div>
+
+                                    </div>
+                                </div>
+                                <!-- Carousel controls -->
+                                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
         </section>
         <section id="contact" class="section">
             <div class="container">
@@ -78,11 +161,41 @@
             </div>
         </section>
     </main>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2024 iTech. Todos os direitos reservados.</p>
+        <div class="content">
+          <ul>
+            <img src="images/logos/logo.png" alt="Logo" id="logo" class="logo">
+            <h3>© 2024 iTechlogies Delivery</h3>
+            <h3>Todos os direitos reservados.</h3>
+            <div class="social">
+              <a href="https://www.facebook.com"><img src="social/facebook.png"></a>
+              <a href="https://web.whatsapp.com"><img src="social/whatsapp.png"></a>
+              <a href="https://www.instagram.com"><img src="social/instagram.png"></a>
+              <a href="https://www.discord.com"><img src="social/discord.png"></a>
+            </div>
+          
+          </ul>
+          <ul>
+            <h3>Links</h3>
+                <li><a href="index.html">Tela Home</a></li>
+                <li><a href="login.html">fazer Login</a></li>
+                <li><a href="cadastro.html">Criar conta</a></li>
+                <li><a href="manter.html">Geren. Conta</a></li>
+                <li><a href="tecnico.html">Sou Técnico</a></li>
+                <li><a href="services.html">Nossos Serviços</a></li>
+                <li><a href="coments.html">Comentários</a></li>
+                <li><a href="aboutUs.html">Sobre Nós</a></li>
+          </ul>
+          <ul>
+            <h3>Endereço:</h3>
+                <li>Avenida Cap. Francisco Cesar, 1XX</li>
+                <li>Cruz Preta, Barueri-SP</li>
+                <li>CEP:0641X-XXX</li>
+          <ul>
         </div>
     </footer>
+
     <script src="index.js"></script>
 </body>
 </html>
